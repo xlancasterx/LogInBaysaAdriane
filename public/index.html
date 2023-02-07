@@ -18,7 +18,7 @@
 
             #loginForm {
                 margin: 10px;
-                background-image: radial-gradient(rgb(217, 255, 224) , rgb(68, 173, 202)); 
+                background-image: radial-gradient(rgb(140, 223, 175) , rgb(68, 173, 202)); 
             }
 
             label, input {
@@ -33,9 +33,9 @@
             <h1>Login Form</h1>
             <form id="loginForm" action="/login" method="POST">
                 <label>Username:</label>
-                <input type="text" name="USERNAME" />
+                <input type="email" name="USERNAME" />
                 <label>Password:</label>
-                <input type="password" name="PASSWORD" />
+                <input type="password" id="password" name="PASSWORD" minlength="8" />
                 <input type="submit" value="LOGIN" />  
             </form>
         </div>
