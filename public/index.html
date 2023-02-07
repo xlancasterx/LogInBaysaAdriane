@@ -1,9 +1,44 @@
 <html>
+    <link rel="login" href="index.css">
     <head>
+        <center>
+        <title>LOGIN FORM</title>
+        <style>
+            body {
+                font-family: fantasy;
+                background-color: rgb(140, 223, 175);
+                border-color: black;
+            }
 
+            .container {
+                border-style: double;
+                max-width: 900px;
+                margin: 150px;
+            }
+
+            #loginForm {
+                margin: 10px;
+                background-image: radial-gradient(rgb(217, 255, 224) , rgb(68, 173, 202)); 
+            }
+
+            label, input {
+                display: block;
+                margin-top: 15px;
+                background-size: auto;
+            }
+        </style>
     </head>
-
     <body>
-        
+        <div class="container">
+            <h1>Login Form</h1>
+            <form id="loginForm" action="/login" method="POST">
+                <label>Username:</label>
+                <input type="text" name="USERNAME" />
+                <label>Password:</label>
+                <input type="password" name="PASSWORD" />
+                <input type="submit" value="LOGIN" />  
+            </form>
+        </div>
     </body>
+</center>
 </html>
